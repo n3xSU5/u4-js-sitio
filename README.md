@@ -1,8 +1,8 @@
-# Taller CSS Unidad 3
+# Taller JS Unidad 4
 
 _Yorman Stiven Lopez Florez - 1152201_
 
-## :deciduous_tree: Sitio Web: [Atlas de Flora y Fauna](https://n3xsu5.github.io/u3-css3-sitio/)
+## :deciduous_tree: Sitio Web: [Atlas de Flora y Fauna](https://n3xsu5.github.io/u4-js-sitio/)
 
 Tomando en cuenta los temas de la unidad y con la opción de un blog personal descartado, he optado por crear un sitio web estático que funcione de sitio informativo. De esta manera entre todas las ideas que tenía decidí el de crear un Atlas de Flora y Fauna de Cúcuta, Norte de Santander para que la presencia de cada temática tuviera sentido dentro de la página.
 
@@ -20,71 +20,44 @@ Tomando en cuenta los temas de la unidad y con la opción de un blog personal de
 -	Contacto (contacto.html)
 
 ## Temas de la Unidad
-- [x] Repositorio GitHub obligatorio: crea un repositorio privado llamado exactamente u3-css3-sitio.
+- [x] Repositorio GitHub obligatorio: crea un repositorio público llamado exactamente u4-js-sitio.
 
-- [x] Mantén al menos 10 páginas HTML relacionadas: index.html, acerca.html, servicios.html, contacto.html, blog.html, articulo1.html, articulo2.html, galeria.html, tabla.html, legal.html.
-  - [10 páginas](github.com/n3xSU5/u3-css3-sitio#el-atlas-consta-de-10-páginas-incluyendo)
+- [x] Crear carpeta /js y archivo app.js enlazado en todas las páginas.
+  - <img width="425" height="200" alt="imagen" src="https://github.com/user-attachments/assets/071ee0a4-69c4-4843-90e6-682cc437cfbe" />
 
-- [x] Estructura de carpetas obligatoria: /css, /img, /media.
+- [x] Declarar constantes APP_NOMBRE, APP_VERSION, ANIO.
+- [x] Variables con let: contadorVisitas, usuarioActivo, esMovil.
+- [x] Funciones sumar() y multiplicar().
+  - <img width="517" height="253" alt="imagen" src="https://github.com/user-attachments/assets/7a009684-a1b7-47d6-9c26-e9a4b07cdd18" />
 
-- [x] Archivo /css/styles.css enlazado en TODAS las páginas.
+- [x] Mostrar mensaje de bienvenida en #salida con template string.
+- [x] Botón con contador de visitas y actualización en #totalVisitas.
+- [x] Función mostrarHora() con reloj en header.
+  - <img width="772" height="541" alt="imagen" src="https://github.com/user-attachments/assets/1827dc09-ac97-4900-a7de-4db835aabf24" />
 
-- [x] Agrega reset CSS: * { box-sizing: border-box; margin: 0; padding: 0; }
-  - <img width="621" height="130" alt="imagen" src="https://github.com/user-attachments/assets/49da15ae-7c58-4fad-9002-7ea9e8c9320a" />
+- [x] Navegación activa usando data-page y clase activo.
+- [x] DOM básico: cambio de color con botones (rojo, verde, azul).
+  - <img width="552" height="408" alt="imagen" src="https://github.com/user-attachments/assets/06d341b2-3149-4f1a-b1cc-b7731c30000c" />
 
-- [x] Estilo base body: font-family Arial, font-size 16px, line-height 1.6, color #333, background #FAFAFA.
-  - <img width="845" height="180" alt="imagen" src="https://github.com/user-attachments/assets/04bab2fc-2b35-4eb2-b047-a3e3631f934f" />
+- [x] DOM avanzado: lista de notas con validación de input.
+  - <img width="504" height="471" alt="imagen" src="https://github.com/user-attachments/assets/3331bb4c-1fd7-45fe-b2c9-1bc9a5b9ba19" />
 
-- [x] Estilos de h1,h2,h3 con tamaños exactos: 32px, 24px, 20px.
-- [x] Header con fondo #0D47A1 y texto blanco.
-  - <img width="538" height="201" alt="imagen" src="https://github.com/user-attachments/assets/ad599b3a-7565-48e3-b453-88892dbd580a" />
+- [x] Validación de formulario en [contacto.html](https://n3xsu5.github.io/u4-js-sitio/pages/contacto.html) con mensajes de error.
+- [x] Mensaje de éxito al enviar formulario válido.
+  - <img width="870" height="484" alt="imagen" src="https://github.com/user-attachments/assets/1eb7fb00-f7f5-4f3f-b25e-4d362b237935" />
 
-- [x] Menú nav con Flexbox horizontal.
-  - <img width="403" height="552" alt="imagen" src="https://github.com/user-attachments/assets/296627ab-3a10-40fb-916f-42f707ae61e1" />
+- [x] Buscador en [glosario.html](https://n3xsu5.github.io/u4-js-sitio/pages/glosario.html) con coincidencias en tiempo real.
+- [x] Función evaluarNumero(n) con if/else.
+  - <img width="570" height="565" alt="imagen" src="https://github.com/user-attachments/assets/042c3664-b4a7-4b08-838e-5f349a8cd125" />
 
-- [x] Clase .activo para el enlace actual.
-- [x] main con max-width 1100px, centrado.
-- [x] Selector descendente: main p con margin-bottom 10px.
-- [x] Sección #intro con fondo #E3F2FD y borde #BBDEFB.
-  - <img width="448" height="385" alt="imagen" src="https://github.com/user-attachments/assets/d7f3fdd6-290a-46a9-9543-62b292d84b47" />
+- [x] Función obtenerDia(numero) con switch.
+- [x] Renderizar perfil en [contacto.html](https://n3xsu5.github.io/u4-js-sitio/pages/contacto.html) usando template string.
+  - <img width="609" height="571" alt="imagen" src="https://github.com/user-attachments/assets/cc9981af-b332-4589-b7fb-560a03604817" />
 
-- [x] Sección .tarjetas con Grid de 3 columnas y tarjetas estilizadas.
-- [x] Efecto hover en .tarjeta con translateY(-3px).
-- [x] Clases de color (.hex,.rgb,.hsl) aplicadas a párrafos.
-- [x] Unidades px, %, em, rem aplicadas a párrafos demostrativos.
-  - <img width="526" height="504" alt="imagen" src="https://github.com/user-attachments/assets/d85173c4-7798-4d09-a78e-735c611ade5d" />
-
-- [x] Tres cajas con margin, padding y border. La tercera con box-sizing border-box.
-  - <img width="622" height="469" alt="imagen" src="https://github.com/user-attachments/assets/b8d85211-0308-4538-bc5b-fa58502ff762" />
-
-- [x] Banner (Navegación fija) fijo superior en todas las páginas.
-- [x] Badge absoluto en [mes.html](https://n3xsu5.github.io/u3-css3-sitio/pages/mes.html) con contenedor relativo.
-  - <img width="442" height="389" alt="imagen" src="https://github.com/user-attachments/assets/b3355270-530c-4471-88fe-01b3352eca29" />
-
-- [x] Chips en [contacto.html](https://n3xsu5.github.io/u3-css3-sitio/pages/contacto.html) con bordes redondeados.
-  - <img width="391" height="293" alt="imagen" src="https://github.com/user-attachments/assets/f4e44d5e-49c9-4693-872c-094606a41051" />
-
-- [x] Tabla con filas alternadas en [mes.html](https://n3xsu5.github.io/u3-css3-sitio/pages/mes.html).
-  - <img width="365" height="527" alt="imagen" src="https://github.com/user-attachments/assets/751365df-0b59-4f79-9bf6-2009c2d67f7a" />
-
-- [x] Formulario estilizado en [contacto.html](https://n3xsu5.github.io/u3-css3-sitio/pages/contacto.html) con input, select y textarea.
-  - <img width="559" height="495" alt="imagen" src="https://github.com/user-attachments/assets/8af4141b-8b3a-4517-a110-1bf9ff81b25e" />
-
-- [x] Clase .error y .mensaje-error para estados de validación.
-  - <img width="495" height="203" alt="imagen" src="https://github.com/user-attachments/assets/0a213bae-bfc6-4bf5-b854-a420cdcc4485" />
-
-- [x] Galería de imágenes con Grid de 4 columnas.
-  - <img width="384" height="531" alt="imagen" src="https://github.com/user-attachments/assets/bd9d8205-b7ef-4c12-8e93-f62cfd54c457" />
-
-- [x] Media queries para responsive.
-  - <img width="522" height="545" alt="imagen" src="https://github.com/user-attachments/assets/bbab4b55-b344-4aa3-9aae-4bfc3b1e6a2c" />
-
-- [x] Todas las imágenes deben tener alt.
-
-- [x] Estados de foco visibles en enlaces.
-- [x] Footer con fondo #212121 y texto blanco.
-  - <img width="357" height="302" alt="imagen" src="https://github.com/user-attachments/assets/a0594f17-592d-4f45-bc9f-600a08ff5e3c" />
+- [x] LocalStorage para visitas.
+- [x] Clase Util con método formatearMoneda().
+  - <img width="794" height="265" alt="imagen" src="https://github.com/user-attachments/assets/b2fd7f75-6246-4a75-a31c-9eccdf13ecff" />
 
 - [x] README.md con checklist y capturas.
 
-Ver más en el [sitio web desplegado](https://n3xsu5.github.io/u3-css3-sitio/).
+Ver más en el [sitio web desplegado](https://n3xsu5.github.io/u4-js-sitio/).
