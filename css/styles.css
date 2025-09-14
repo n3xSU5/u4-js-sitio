@@ -1,0 +1,356 @@
+/* Basado en el Framework Simple CSS (https://simplecss.org/) */
+
+/* 5. Agrega reset CSS: * { box-sizing: border-box; margin: 0; padding: 0; } */
+* {
+    box-sizing: border-box; /* 5 */
+    margin: 0; /* 5 */
+    padding: 0; /* 5 */
+}
+
+/* Fuera del taller */
+html {scroll-behavior: smooth;}
+hr {
+    border: none;
+    height: 1px;
+    background: #898EA4;
+    margin: 1rem auto;
+}
+
+/* 6. Estilo base body: font-family Arial, font-size 16px, line-height 1.6, color 333, background FAFAFA */
+body {
+    font-family: Arial; /* 6 */
+    font-size: 16px; /* 6 */
+    line-height: 1.6; /* 6 */
+    color: #333; /* 6 */
+    background-color: #FAFAFA; /* 6 */
+    padding: 0 0.5rem 2rem 0.5rem;
+}
+
+/* 7. Estilos de h1,h2,h3 con tamaños exactos: 32px, 24px, 20px */
+h1 {font-size: 32px;} /* 7 */
+h2 {font-size: 24px;} /* 7 */
+h3 {font-size: 20px;} /* 7 */
+
+/* 8. Header con fondo 0D47A1 y texto blanco */
+header {
+    background: #0D47A1; /* 8 */
+    color: #FAFAFA; /* 8 */
+}
+
+/* Format navigation */
+header nav {
+    font-size: 1rem;
+    line-height: 2;
+    padding: 1rem 0 0 0;
+}
+/* 9. Menú nav con Flexbox horizontal */
+header nav ul,
+header nav ol {
+    align-content: space-around;
+    align-items: center;
+    display: flex; /* 9 */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/* List items are inline elements, make them behave more like blocks */
+header nav ul li,
+header nav ol li {
+    display: inline-block;
+}
+header nav a,
+header nav a:visited {
+    margin: 0 0.5rem 1rem 0.5rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #FAFAFA;
+    display: inline-block;
+    padding: 0.1rem 1rem;
+    text-decoration: none;
+}
+header nav a:hover,
+header nav a[aria-current="page"],
+header nav a.activo { /* 10 */
+    background: #FAFAFA;
+    border-color: #0D47A1;
+    color: #0D47A1;
+    cursor: pointer;
+}
+
+/* 10. Clase .activo para el enlace actual */
+.activo{text-decoration: none;}
+
+/* 11. main con max-width 1100px, centrado */
+main {
+    max-width: 1100px; /* 11 */
+    margin: auto; /* 11 */
+    padding-top: 6rem;
+}
+
+/* 12. Selector descendente: main p con margin-bottom 10px */
+main p {
+    margin-bottom: 10px; /* 12 */
+}
+
+/* 13. Sección #intro con fondo E3F2FD y borde BBDEFB */
+#intro {
+    background: #E3F2FD; /* 13 */
+    border: 1px solid #BBDEFB; /* 13 */
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+/* 14. Sección .tarjetas con Grid de 3 columnas y tarjetas estilizadas */
+.tarjetas {
+    display: grid; /* 14 */
+    grid-template-columns: repeat(3, 1fr); /* 14 */
+    gap: 1rem;
+}
+.tarjeta {
+    background: #FAFAFA;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+/* 15. Efecto hover en .tarjeta con translateY(-3px) */
+.tarjeta:hover {
+    transform: translateY(-3px); /* 15 */
+}
+
+/* 16. Clases de color (.hex,.rgb,.hsl) aplicadas a párrafos */
+.hex {color:#E3F2FD} /* 16 */
+.rgb {color: rgb(61, 167, 12);} /* 16 */
+.hsl {color: hsl(214, 100%, 44%);} /* 16 */
+
+/* 17. Unidades px, %, em, rem aplicadas a párrafos demostrativos */
+.unidad-px {font-size: 16px;} /* 17 */
+.unidad-porcentaje {font-size: 100%;} /* 17 */
+.unidad-em {font-size: 1em;} /* 17 */
+.unidad-rem {font-size: 1rem;} /* 17 */
+
+/* 18. Tres cajas con margin, padding y border. La tercera con box-sizing border-box */
+.caja1 {
+    background: #318500;
+    color: #FAFAFA;
+    border: 1px solid #333; /* 18 */
+    border-radius: 5px;
+    padding: 1.5rem; /* 18 */
+    margin: 2rem 0; /* 18 */
+}
+.caja2 {
+    background: #2B2B2B;
+    color: #E3F2FD;
+    border: 1px solid #0D47A1; /* 18 */
+    border-radius: 5px;
+    padding: 1.5rem; /* 18 */
+    margin: 2rem 0; /* 18 */
+    text-align: center;
+}
+.caja3 {
+    background: #0D47A1;
+    color: #FAFAFA;
+    border: 1px solid #333; /* 18 */
+    border-radius: 5px;
+    padding: 1.5rem; /* 18 */
+    margin: 2rem 0; /* 18 */
+    box-sizing: border-box; /* 18 */
+}
+
+/* 19. Banner fijo superior en todas las páginas */
+.banner { /* 19 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+/* 20. Badge absoluto en blog.html con contenedor relativo */
+.badge { /* 20 */
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #FF3C00;
+    color: #FAFAFA;
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}.contenedor-relativo { /* 20 */
+    position: relative;
+}
+
+/* 21. Chips en acerca.html con bordes redondeados */
+.chip { /* 21 */
+    display: inline-block;
+    background: #E3F2FD;
+    border: 1px solid #BBDEFB;
+    border-radius: 25px; /* 21 */
+    padding: 0.25rem 1rem; /* 21 */
+    margin: 0.25rem; /* 21 */
+    font-size: 0.9rem;
+}
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* 22. Tabla con filas alternadas en tabla.html */
+.calendario {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.calendario th,
+.calendario td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    vertical-align: top;
+    min-height: 4rem;
+}
+.calendario tbody tr:nth-child(even) { /* 22 */
+    background: #318500;
+}
+.calendario td.hoy {
+    background: #FAFAFA;
+    border-color: #333;
+    color: #333;
+}
+.calendario .evento {
+    display: block;
+    background: #333;
+    color: #fff;
+    padding: 0.15rem 0.35rem;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+}
+
+/* 23. Formulario estilizado en contacto.html con input, select y textarea */
+textarea,
+select,
+input,
+button,
+.button {
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.5em;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    box-shadow: none;
+    max-width: 100%;
+    display: inline-block;
+}
+textarea,
+select,
+input {
+    color: #333;
+    background-color: #FAFAFA;
+    border: 1px solid #E3F2FD;
+}
+label {
+    display: block;
+}
+textarea:not([cols]) {
+    width: 100%;
+}
+
+/* 24. Clase .error y .mensaje-error para estados de validación */
+.error { /* 24 */
+    border: 2px solid #FF3C00;
+    box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.08);
+}
+.mensaje-error { /* 24 */
+    display: none;
+    color: #FF3C00;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* 25. Galería de imágenes con Grid de 4 columnas */
+.galeria {
+    display: grid; /* 25 */
+    grid-template-columns: repeat(4, 1fr); /* 25 */
+    gap: 1rem;
+}
+article,
+fieldset,
+dialog {
+    border: 1px solid #898EA4;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+figure {
+    margin: 0;
+    display: block;
+    overflow-x: auto;
+}
+figure>img,
+figure>picture>img {
+    display: block;
+    margin-inline: auto;
+}
+
+/* 26. Media queries para responsive */
+/* Reduce nav side on mobile */
+@media only screen and (max-width: 720px) {
+    header nav a {
+        border: none;
+        padding: 0;
+        text-decoration: underline;
+        line-height: 1;
+    }
+    header nav a.current {
+        background: none;
+    }
+}
+/* Makes input fields wider on smaller screens */
+@media only screen and (max-width: 720px) {
+    textarea,
+    select,
+    input {
+        width: 100%;
+    }
+}
+@media (max-width:720px){
+    .calendario { display:block; overflow-x:auto; white-space:nowrap; }
+}
+@media (max-width: 900px) {
+    .tarjetas { grid-template-columns: repeat(2, 1fr); }
+    .galeria { grid-template-columns: repeat(2, 1fr); }
+}@media (max-width: 720px) {
+    .tarjetas { grid-template-columns: 1fr; }
+    .galeria { grid-template-columns: 1fr; }
+}
+
+/* 27. Estados de foco visibles en enlaces */
+a:focus,
+a:focus-visible { /* 27 */
+    outline: 2px solid #2B2B2B;
+    outline-offset: 2px;
+    border-radius: 5px;
+}
+
+/* 29. Footer con fondo 212121 y texto blanco */
+footer {
+    background: #212121; /* 29 */
+    color: #FFFFFF; /* 29 */
+    margin-top: 4rem;
+    padding: 2rem 1rem 1.5rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+}

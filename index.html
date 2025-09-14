@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atlas - Inicio</title>
+        <meta name="description" content="Atlas informativo de flora y fauna urbana: explora especies, aprende a identificarlas y consulta recursos.">
+        <meta name="keywords" content="Atlas,flora,fauna,Cúcuta,Norte de Santander,especies,ficha,identificación,ética">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/app.js"></script>
+    </head>
+
+    <body id="top" data-page="index">
+        <header class="banner">
+            <nav aria-label="Navegación Principal">
+                <ul>
+                    <li><a href="index.html"><strong> Atlas </strong></a></li>
+                    <li><a href="pages/mes.html">Septiembre</a></li>
+                    <li><a href="pages/etica.html">Ética</a></li>
+                    <li><a href="pages/glosario.html">Glosario</a></li>
+                    <li><a href="pages/recursos.html">Recursos</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a id="reloj" aria-live="polite">00:00:00</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="cambiar-color">
+                <button data-color="salmon">Rojo</button>
+                <button data-color="lightgreen">Verde</button>
+                <button data-color="lightblue">Azul</button>
+                <button data-color="white">Blanco</button>
+            </div>
+            <section id="intro">
+                <p id="salida"></p>
+                <h1>Atlas de flora y fauna urbana</h1>
+                <p class="hsl unidad-porcentaje">Explora especies, aprende a identificarlas y observa la naturaleza en la ciudad.</p>
+                <button id="totalVisitas">Contador de Visitas</button>
+                <nav aria-label="Explorar">
+                    <ul>
+                        <li><a href="pages/flora.html">Flora</a></li>
+                        <li><a href="pages/aves.html">Aves</a></li>
+                        <li><a href="pages/insectos.html">Insectos</a></li>
+                        <li><a href="pages/identificar.html">Cómo identificar</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="caja1">
+                <h2>Especies destacadas</h2>
+                <nav aria-label="Especies Destacadas">
+                    <ul>
+                        <li><a href="pages/flora.html#guayacan-amarillo">Guayacán amarillo</a></li>
+                        <li><a href="pages/flora.html#totumo">Totumo</a></li>
+                        <li><a href="pages/aves.html#bichofue">Bichofué</a></li>
+                        <li><a href="pages/insectos.html#mariquita">Mariquita</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="caja3">
+                <h2>Suscríbete</h2>
+                <p>Recibe por correo los últimos artículos y actualizaciones en el Atlas</p>
+                <form>
+                    <fieldset>
+                        <input type="email" name="email" placeholder="Ingrese su correo electrónico" autocomplete="off"
+                            required>
+                        <button type="submit" value="suscripcion">Suscribírse</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="caja2">
+                <section id="notas" aria-labelledby="notas-titulo">
+                    <h2 id="notas-titulo">Notas rápidas</h2>
+
+                    <form id="formNotas" onsubmit="return false;" novalidate>
+                        <label for="inputNota">Nueva nota</label>
+                        <input id="inputNota" name="inputNota" type="text" placeholder="Escribe al menos 3 caracteres" required
+                            minlength="3" />
+                        <button id="btnAgregarNota" type="button">Agregar</button>
+                    </form>
+
+                    <p class="ayuda" id="nota-ayuda">Las notas se añadirán a la lista abajo.</p>
+
+                    <ul id="listaNotas" aria-live="polite"></ul>
+                </section>
+            </section>
+            <hr>
+            <section><a href="#top">Volver al inicio</a></section>
+        </main>
+
+        <footer>
+            <p>2025 UFPS</p>
+            <p><address>Cúcuta / yormanstivenlf@ufps.edu.co</address></p>
+        </footer>
+    </body>
+</html>
