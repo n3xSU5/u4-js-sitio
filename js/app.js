@@ -11,7 +11,6 @@ let esMovil;
 // 5. Funciones sumar() y multiplicar()
 function sumar(a, b) {return a + b;}
 function multiplicar(a, b) {return a * b;}
-
 // Implementación de suma y multiplicación
 document.addEventListener("DOMContentLoaded", function(){
     const pnumero = document.getElementById("pnumero");
@@ -176,7 +175,6 @@ function evaluarNumero(n) {
     }
     return "Cero";
 }
-
 // 16. Función obtenerDia(numero) con switch
 function obtenerDia(numero) {
     switch (numero) {
@@ -190,6 +188,22 @@ function obtenerDia(numero) {
         default: return "Número inválido";
     }
 }
+// Implementación de evaluarNumero y obtenerDia
+document.addEventListener("DOMContentLoaded", function(){
+    const pnumero = document.getElementById("pnumero");
+    const snumero = document.getElementById("snumero");
+    const btnEvaluar = document.getElementById("btnEvaluar");
+    const salida = document.getElementById("salidanumerica");
+    if (btnEvaluar && salida) {
+        btnEvaluar.addEventListener("click", function () {
+            const num1 = parseFloat(pnumero.value) || 0;
+            const num2 = parseInt(snumero.value) || 0;
+            const resultadoEval = evaluarNumero(num1);
+            const resultadoDia = obtenerDia(num2);
+            salida.innerText = `Evaluar Número: ${resultadoEval}\nDía de la semana: ${resultadoDia}`;
+        });
+    }
+});
 
 // 17. Renderizar perfil en contacto.html usando template string
 function renderizarPerfil(nombre, edad, profesion) {
