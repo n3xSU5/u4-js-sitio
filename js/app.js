@@ -1,6 +1,6 @@
 // 3. Declarar constantes APP_NOMBRE, APP_VERSION, ANIO
 const APP_NOMBRE = "Atlas";
-const APP_VERSION = 1.0;
+const APP_VERSION = 1.2;
 const ANIO = 2025;
 
 // 4. Variables con let: contadorVisitas, usuarioActivo, esMovil
@@ -11,6 +11,31 @@ let esMovil;
 // 5. Funciones sumar() y multiplicar()
 function sumar(a, b) {return a + b;}
 function multiplicar(a, b) {return a * b;}
+
+// Implementación de suma y multiplicación
+document.addEventListener("DOMContentLoaded", function(){
+    const pnumero = document.getElementById("pnumero");
+    const snumero = document.getElementById("snumero");
+    const btnSumar = document.getElementById("btnSumar");
+    const btnMultiplicar = document.getElementById("btnMulti");
+    const salida = document.getElementById("salidanumerica");
+    if (btnSumar && salida) {
+        btnSumar.addEventListener("click", function () {
+            const num1 = parseFloat(pnumero.value) || 0;
+            const num2 = parseFloat(snumero.value) || 0;
+            const resultado = sumar(num1, num2);
+            salida.innerText = `Resultado: ${resultado}`;
+        });
+    }
+    if (btnMultiplicar && salida) {
+        btnMultiplicar.addEventListener("click", function () {
+            const num1 = parseFloat(pnumero.value) || 0;
+            const num2 = parseFloat(snumero.value) || 0;
+            const resultado = multiplicar(num1, num2);
+            salida.innerText = `Resultado: ${resultado}`;
+        });
+    }
+});
 
 // 6. Mostrar mensaje de bienvenida en #salida con template string
 document.addEventListener("DOMContentLoaded", function(){
